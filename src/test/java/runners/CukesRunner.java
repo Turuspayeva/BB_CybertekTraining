@@ -10,9 +10,9 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         plugin = "html:target/cucumber-reports",
         features = "src/test/resources/features",
-        glue = "step_definitions",
-        dryRun =false,
-        tags = "@smartOrder"
+        glue = "step_defs",
+        dryRun =true,
+        tags = "@BB-417"
 )
 
 public class CukesRunner {

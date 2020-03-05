@@ -34,4 +34,7 @@ public class AllTeacherPage {
     public WebElement addTeacherDropdown;
 
 
+    @FindBy(xpath = "//*[@id='app']/div/div/div[2]/div[1]")
+
+    public WebElement firstTeacherName;
 }
