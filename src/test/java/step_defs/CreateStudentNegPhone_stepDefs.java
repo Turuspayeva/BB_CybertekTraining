@@ -196,7 +196,7 @@ public void user_clicks_on_submit_button() {
                 "contact.phone " +
                 "from student inner join contact on student.student_id=contact.student_id where student.first_name='" +
                  getDataFromTempStorage("Firstname")+ "' and student.last_name='"+getDataFromTempStorage("Lastname")+
-        "' and contact.phone='"+ getDataFromTempStorage("PhoneNumber")+"';";
+        "' and contact.phone='"+ getDataFromTempStorage("PhoneNumber")+"'";
         System.out.println(query);
 
 //        select student.last_name, student.first_name, contact.phone from student inner join contact on student.student_id=contact.student_id
@@ -204,6 +204,7 @@ public void user_clicks_on_submit_button() {
 
         try {
             List<Map<Object, Object>> result = DBUtility.executeQuery(query);
+            SeleniumUtils.pause(3);
             Assert.assertTrue("Array with set result is not empty", result.isEmpty());
             for (int i=0; i<result.size(); i++){
                 System.out.println(result.get(i).toString());
