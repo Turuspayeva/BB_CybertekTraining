@@ -37,4 +37,6 @@ public class AllTeacherPage {
     @FindBy(xpath = "//*[@id='app']/div/div/div[2]/div[1]")
 
     public WebElement firstTeacherName;
+    @FindBy (xpath = "//*[@id=\"app\"]/div/div/div[2]/div[1]/div/div[2]/a/i")
+    public WebElement threeDots;
 }
