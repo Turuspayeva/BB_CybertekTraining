@@ -13,6 +13,7 @@ import utilities.*;
 import static utilities.TempStorage.*;
 
 import java.nio.file.AccessDeniedException;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -42,6 +43,8 @@ public class CreateStudentNegPhone_stepDefs {
         }
 
     }
+
+
     @Test
     @When("user enters {string} to lastname field")
     public void user_enters_to_Lastname_field(String Lastname) {
@@ -187,7 +190,7 @@ public void user_clicks_on_submit_button() {
         try {
             DBUtility.createConnection();
         }
-        catch(Exception e){
+        catch(SQLException e){
             System.out.println(e.getLocalizedMessage());
         }
         String query = "select " +
@@ -209,6 +212,7 @@ public void user_clicks_on_submit_button() {
             for (int i=0; i<result.size(); i++){
                 System.out.println(result.get(i).toString());
             }
+            DBUtility.close();
 
         }
         catch (Exception e){
