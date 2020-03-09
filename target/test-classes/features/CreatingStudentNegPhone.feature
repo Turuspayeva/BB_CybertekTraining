@@ -1,3 +1,4 @@
+@smoke
 Feature:Creating a student
 
   @BB-419 @BB-409
