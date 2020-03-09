@@ -1,4 +1,5 @@
-Feature: 
+@smoke
+Feature:
 
 	
 	@BB-437 @BB-409
