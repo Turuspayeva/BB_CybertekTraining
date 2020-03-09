@@ -1,106 +1,191 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/features/DeleteStudentValidation.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/features/EmptyEmail.feature");
 formatter.feature({
-  "name": "",
+  "name": "As a User I should able to create teacher",
   "description": "",
-  "keyword": "Feature"
-});
-formatter.scenario({
-  "name": "Delete student validation",
-  "description": "",
-  "keyword": "Scenario",
+  "keyword": "Feature",
   "tags": [
     {
-      "name": "@BB-437"
+      "name": "@BB-423"
     },
     {
       "name": "@BB-409"
     }
   ]
 });
-formatter.before({
-  "status": "passed"
+formatter.scenario({
+  "name": "NegativeScenario - User Enters Empty Email",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@BB-423"
+    },
+    {
+      "name": "@BB-409"
+    },
+    {
+      "name": "@BB-423"
+    }
+  ]
 });
 formatter.step({
-  "name": "User logged in to app and on all students module",
+  "name": "User is on CybertekTrining  Main Page",
   "keyword": "Given "
 });
-formatter.match({
-  "location": "DeleteStudentValidation_StepDef.user_logged_in_to_app_and_on_all_students_module()"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.step({
-  "name": "User click on vertical ellipsis in particular student card",
+  "name": "User clicks on Teachers",
   "keyword": "When "
 });
-formatter.match({
-  "location": "DeleteStudentValidation_StepDef.user_click_on_vertical_ellipsis_in_particular_student_card()"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.step({
-  "name": "Drop down menu should appears",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "DeleteStudentValidation_StepDef.drop_down_menu_should_appears()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User click on delete option",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "DeleteStudentValidation_StepDef.user_click_on_delete_option()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "conformation message should appear",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "DeleteStudentValidation_StepDef.conformation_message_should_appear()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User confirm this action",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "DeleteStudentValidation_StepDef.user_confirm_this_action()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "student should no longer appear in the page",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "DeleteStudentValidation_StepDef.student_should_no_longer_appear_in_the_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "student should no longer appear in student table in DB",
+  "name": "All Teachers and Add Teachers Should be Displayed",
   "keyword": "And "
 });
-formatter.match({
-  "location": "DeleteStudentValidation_StepDef.student_should_no_longer_appear_in_student_table_in_DB()"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
-formatter.after({
-  "status": "passed"
+formatter.step({
+  "name": "User Clicks on Add Teachers",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "User Enters First Name",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "User Enters Last Name",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "User Enters Empty Email",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "User Enters Joining Date",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "User Enters Password",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "User Entes Confirm Password",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "User Enters Subject",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "User Enters Mobile Number",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "User Selelct Gender from the Dropdowns",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "User Select Depertement from the Dropdowns",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "User Enters Birth Date",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "User Enters Salary",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "User Select Number of Batch from the Dropdowns",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "User Enter the Section",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "User Enter the Premanent Address",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "User Should Clicks on Blue Submit Button",
+  "keyword": "Then "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
 });
 });
