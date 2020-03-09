@@ -12,11 +12,9 @@ import org.junit.runner.RunWith;
         plugin = "html:target/cucumber-reports",
         features = "src/test/resources/features",
         glue = "step_defs",
-        dryRun =true,
-        tags = "@BB-417"
-        glue = "step_defs",
         dryRun =false,
-        tags = "@BB-419"
+        tags = "@BB-417"
+
 )
 
 public class CukesRunner {
