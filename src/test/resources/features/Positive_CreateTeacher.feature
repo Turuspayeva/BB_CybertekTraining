@@ -1,4 +1,4 @@
-@Smoke
+@smoke
 Feature: Positive Scenario for Teacher
 
 	Background: Main page
