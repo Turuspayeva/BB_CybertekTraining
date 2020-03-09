@@ -61,7 +61,7 @@ public class AddTeacherPage {
     public WebElement sectionInput;
 
     @FindBy (xpath = "//textarea[@placeholder='Premanent Address']")
-    public WebElement premanentAddressInput;
+    public WebElement permanentAddressInput;
 
     @FindBy (xpath = "//button[@type='submit']")
     public WebElement submitButton;
