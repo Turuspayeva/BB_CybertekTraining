@@ -10,41 +10,46 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.Select;
 import pages.AddTeacherPage;
 import pages.AllTeacherPage;
+import pages.LeftSideMenu;
 import utilities.Config;
 import utilities.Driver;
 
 public class EmptyEmail_step_defs {
 
     AddTeacherPage addTeacherPage = new AddTeacherPage();
-    AllTeacherPage allTeacherPage = new AllTeacherPage();
+//    AllTeacherPage allTeacherPage = new AllTeacherPage();
+    LeftSideMenu leftSideMenu = new LeftSideMenu();
 
 
-    @Given("User is on CybertekTrining  Main Page")
+
+    @Given("User is on CybertekTrining Main Page")
     public void user_is_on_CybertekTrining_Main_Page() {
 
 
-        Driver.getDriver().get(Config.getProperty("http://cybertektraining.com/"));
+        Driver.getDriver().get(Config.getProperty("url"));
 
     }
-
     @When("User clicks on Teachers")
     public void user_clicks_on_Teachers() {
-
-        allTeacherPage.mainTeachersDropdown.click();
-
+        //clic
+//        leftSideMenu.AllTeachersLink.click();
+     // allTeacherPage.addTeacherDropdown.click();
+        leftSideMenu.TeachersDropdown.click();
 
     }
 
     @When("All Teachers and Add Teachers Should be Displayed")
     public void all_Teachers_and_Add_Teachers_Should_be_Displayed() {
-        Assert.assertTrue(allTeacherPage.allTeachersDropdown.isDisplayed());
-        Assert.assertTrue(allTeacherPage.addTeacherDropdown.isDisplayed());
+
+//        Assert.assertTrue(allTeacherPage.allTeachersDropdown.isDisplayed());
+//        Assert.assertTrue(allTeacherPage.addTeacherDropdown.isDisplayed());
 
     }
 
     @When("User Clicks on Add Teachers")
     public void user_Clicks_on_Add_Teachers() {
-     allTeacherPage.addTeacherDropdown.click();
+
+   leftSideMenu.AddTeacherLink.click();
     }
 
     @When("User Enters First Name")
@@ -100,7 +105,7 @@ public class EmptyEmail_step_defs {
     public void user_Selelct_Gender_from_the_Dropdowns() {
 
         Select select = new Select(addTeacherPage.genderDropdown);
-        select.deselectByVisibleText("male");
+        select.selectByVisibleText("Male");
 
     }
 
@@ -108,7 +113,7 @@ public class EmptyEmail_step_defs {
     public void user_Select_Depertement_from_the_Dropdowns() {
 
         Select select = new Select(addTeacherPage.departmentDropdown);
-        select.deselectByVisibleText("Computer");
+        select.selectByVisibleText("Computer");
 
     }
 
@@ -126,20 +131,23 @@ public class EmptyEmail_step_defs {
 
     @When("User Select Number of Batch from the Dropdowns")
     public void user_Select_Number_of_Batch_from_the_Dropdowns() {
+
         Select select = new Select(addTeacherPage.batchDropdown);
-        select.deselectByVisibleText("1");
+        select.selectByVisibleText("1");
 
     }
 
     @When("User Enter the Section")
     public void user_Enter_the_Section() {
+
         addTeacherPage.sectionInput.sendKeys("6");
 
     }
 
     @When("User Enter the Premanent Address")
     public void user_Enter_the_Premanent_Address() {
-        addTeacherPage.premanentAddressInput.sendKeys("123 main st ");
+
+        addTeacherPage.permanentAddressInput.sendKeys("123 main st ");
 
 
     }
