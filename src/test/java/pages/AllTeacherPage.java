@@ -21,7 +21,6 @@ public class AllTeacherPage {
 //    @FindBy (xpath = "(//div[@class='form-group custom-mt-form-group'])[3]/select")
 //    public WebElement departmentDropdown;
 
-
     @FindBy (xpath = "(//input[@type='text'])[1]")
     public WebElement teacherID_Input;
 
@@ -33,6 +32,10 @@ public class AllTeacherPage {
 
     @FindBy (xpath = "//a[@class='btn btn-primary btn-rounded float-right']")
     public WebElement addTeacherDropdown;
+
+
+
+
 
 
 }
