@@ -11,15 +11,15 @@ public class AllTeacherPage {
         PageFactory.initElements(Driver.getDriver(), this);
 
     }
+
     @FindBy (xpath = "//a[@class='active subdrop']")
     public WebElement mainTeachersDropdown;
 
     @FindBy (xpath = "//a[.='All Teachers']")
     public WebElement allTeachersDropdown;
 
-    @FindBy (xpath = "(//div[@class='form-group custom-mt-form-group'])[3]/select")
-    public WebElement departmentDropdown;
-
+//    @FindBy (xpath = "(//div[@class='form-group custom-mt-form-group'])[3]/select")
+//    public WebElement departmentDropdown;
 
     @FindBy (xpath = "(//input[@type='text'])[1]")
     public WebElement teacherID_Input;
@@ -34,9 +34,8 @@ public class AllTeacherPage {
     public WebElement addTeacherDropdown;
 
 
-    @FindBy(xpath = "//*[@id='app']/div/div/div[2]/div[1]")
 
-    public WebElement firstTeacherName;
-    @FindBy (xpath = "//*[@id=\"app\"]/div/div/div[2]/div[1]/div/div[2]/a/i")
-    public WebElement threeDots;
+
+
+
 }
