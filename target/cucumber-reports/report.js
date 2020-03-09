@@ -1,237 +1,107 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/features/EmptyEmail.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/features/DeleteTeacher.feature");
 formatter.feature({
-  "name": "As a User I should able to create teacher",
+  "name": "Delete Teacher on Page",
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@BB-423"
-    },
-    {
-      "name": "@BB-409"
+      "name": "@smoke"
     }
   ]
 });
 formatter.scenario({
-  "name": "NegativeScenario User Enters Empty Email",
+  "name": "PositiveScenario - User Should be able To delete Teacher",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@BB-423"
+      "name": "@smoke"
     },
     {
-      "name": "@BB-409"
-    },
-    {
-      "name": "@BB-423"
+      "name": "@BB-417"
     }
   ]
 });
 formatter.before({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
-  "name": "User is on CybertekTrining Main Page",
+  "name": "User will go on main page",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "EmptyEmail_step_defs.user_is_on_CybertekTrining_Main_Page()"
+  "location": "DeleteTeacher_step_defs.user_will_go_on_main_page()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
-  "name": "User clicks on Teachers",
+  "name": "User Should Press on Teachers",
   "keyword": "When "
 });
 formatter.match({
-  "location": "EmptyEmail_step_defs.user_clicks_on_Teachers()"
+  "location": "DeleteTeacher_step_defs.user_Should_Press_on_Teachers()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
-  "name": "All Teachers and Add Teachers Should be Displayed",
+  "name": "User Clicks on All Teacher",
   "keyword": "And "
 });
 formatter.match({
-  "location": "EmptyEmail_step_defs.all_Teachers_and_Add_Teachers_Should_be_Displayed()"
+  "location": "DeleteTeacher_step_defs.user_Clicks_on_All_Teacher()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
-  "name": "User Clicks on Add Teachers",
+  "name": "Clicks On The Three dots at the Right",
   "keyword": "And "
 });
 formatter.match({
-  "location": "EmptyEmail_step_defs.user_Clicks_on_Add_Teachers()"
+  "location": "DeleteTeacher_step_defs.clicks_On_The_Three_dots_at_the_Right()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
-  "name": "User Enters First Name",
+  "name": "User Should Click on Delete Button",
   "keyword": "And "
 });
 formatter.match({
-  "location": "EmptyEmail_step_defs.user_Enters_First_Name()"
+  "location": "DeleteTeacher_step_defs.user_Should_Click_on_Delete_Button()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
-  "name": "User Enters Last Name",
+  "name": "User Should Click on the Red Delete Button",
   "keyword": "And "
 });
 formatter.match({
-  "location": "EmptyEmail_step_defs.user_Enters_Last_Name()"
+  "location": "DeleteTeacher_step_defs.user_Should_Click_on_the_Red_Delete_Button()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
-  "name": "User Enters Empty Email",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "EmptyEmail_step_defs.user_Enters_Empty_Email()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User Enters Joining Date",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "EmptyEmail_step_defs.user_Enters_Joining_Date()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User Enters Password",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "EmptyEmail_step_defs.user_Enters_Password()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User Entes Confirm Password",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "EmptyEmail_step_defs.user_Entes_Confirm_Password()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User Enters Subject",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "EmptyEmail_step_defs.user_Enters_Subject()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User Enters Mobile Number",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "EmptyEmail_step_defs.user_Enters_Mobile_Number()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User Selelct Gender from the Dropdowns",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "EmptyEmail_step_defs.user_Selelct_Gender_from_the_Dropdowns()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User Select Depertement from the Dropdowns",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "EmptyEmail_step_defs.user_Select_Depertement_from_the_Dropdowns()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User Enters Birth Date",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "EmptyEmail_step_defs.user_Enters_Birth_Date()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User Enters Salary",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "EmptyEmail_step_defs.user_Enters_Salary()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User Select Number of Batch from the Dropdowns",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "EmptyEmail_step_defs.user_Select_Number_of_Batch_from_the_Dropdowns()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User Enter the Section",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "EmptyEmail_step_defs.user_Enter_the_Section()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User Enter the Premanent Address",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "EmptyEmail_step_defs.user_Enter_the_Premanent_Address()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User Should Clicks on Blue Submit Button",
+  "name": "Teacher will no longer will appear in the page",
   "keyword": "Then "
 });
-formatter.match({
-  "location": "EmptyEmail_step_defs.user_Should_Clicks_on_Blue_Submit_Button()"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
+});
+formatter.step({
+  "name": "User will check table in DataBAse",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
 });
 formatter.after({
-  "status": "passed"
+  "status": "skipped"
 });
 });

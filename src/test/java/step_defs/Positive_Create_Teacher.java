@@ -110,7 +110,7 @@ public class Positive_Create_Teacher {
 
     @Given("User enters Premanent Address")
     public void user_enters_Premanent_Address() {
-        addTeacherPage.premanentAddressInput.sendKeys("123 Main st. North Aurora, 60542, IL");
+        addTeacherPage.permanentAddressInput.sendKeys("123 Main st. North Aurora, 60542, IL");
     }
 
     @Given("User clicks Submit button")

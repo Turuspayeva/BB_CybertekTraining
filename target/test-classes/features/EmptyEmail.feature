@@ -1,4 +1,4 @@
-@BB-423 @BB-409
+@BB-423 @BB-409 @smoke
 Feature:As a User I should able to create teacher
   @BB-423
 	Scenario: NegativeScenario User Enters Empty Email
