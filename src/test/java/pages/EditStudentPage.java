@@ -5,9 +5,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
-public class AddStudentPage {
+public class EditStudentPage {
 
-    public AddStudentPage(){
+    public EditStudentPage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
@@ -32,7 +32,7 @@ public class AddStudentPage {
     @FindBy(xpath = "(//select)[2]")
     public WebElement Batch;
 
-    @FindBy(xpath  = "(//input[@type='text'])[5]")
+    @FindBy(xpath = "(//input[@type='text'])[5]")
     public WebElement LastName;
 
     @FindBy(xpath = "(//input[@type='text'])[6]")
@@ -77,12 +77,11 @@ public class AddStudentPage {
     @FindBy(xpath = "//textarea[@id='message']")
     public WebElement PremanentAddress;
 
-    @FindBy(tagName = "h5")
-    public WebElement headerOfThePage;
-
-
     @FindBy (xpath = "//button[@type='submit']")
     public WebElement submitButton;
+
+    @FindBy (xpath = "(//div[@class='error'])[1]")
+    public WebElement thisFieldIsRequired;
 
 
 }

@@ -1,6 +1,8 @@
 package utilities;
 
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -29,8 +31,21 @@ public class DBUtility { private static Connection connection;
     public static List<Map<Object, Object>> executeQuery (String query) throws SQLException {
         statement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
 
+        resultSet = statement.executeQuery(query);
+        ResultSetMetaData metaData = resultSet.getMetaData();
+        int numberOfColumns = metaData.getColumnCount();
+        List<Map<Object, Object>> data = new ArrayList();
 
-        return null;
+        while (resultSet.next()) {
+            Map<Object, Object> map = new HashMap();
+            for (int i = 1; i <= numberOfColumns; i++) {
+                map.put(metaData.getColumnName(i), resultSet.getObject(i));
+
+            }
+            data.add(map);
+        }
+
+        return data;
     }
 
     public static void close() throws SQLException {
