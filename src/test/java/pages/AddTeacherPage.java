@@ -65,9 +65,4 @@ public class AddTeacherPage {
 
     @FindBy (xpath = "//button[@type='submit']")
     public WebElement submitButton;
-
-
-
-
-
 }
