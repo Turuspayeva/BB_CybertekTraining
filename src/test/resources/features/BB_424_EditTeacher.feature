@@ -1,3 +1,4 @@
+@smoke
 Feature: Verify the Firstname field not allowing to put negative data on Edit Details Page
 
 	@BB-424 @BB-409 @negative
