@@ -12,7 +12,7 @@ public class AddTeacherPage {
     }
 
 
-    @FindBy (xpath = "//a[@class='active subdrop']")
+    @FindBy (xpath = "//span[.=' Teachers']")
     public WebElement mainTeachersDropdown;
 
     @FindBy (xpath = "//a[.='Add Teacher']")
@@ -24,7 +24,7 @@ public class AddTeacherPage {
     @FindBy (xpath = "(//input[@type='text'])[2]")
     public WebElement emailInput;
 
-    @FindBy (xpath = "(//input[@type='password'])[1]")
+    @FindBy (xpath = "(//input[@type='password'])[1]")//(//div[@class='form-group custom-mt-form-group'])[3]/input
     public WebElement passwordInput;
 
     @FindBy (xpath = "(//input[@type='text'])[3]")
