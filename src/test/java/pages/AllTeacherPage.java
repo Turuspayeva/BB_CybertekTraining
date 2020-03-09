@@ -17,8 +17,8 @@ public class AllTeacherPage {
     @FindBy (xpath = "//a[.='All Teachers']")
     public WebElement allTeachersDropdown;
 
-    @FindBy (xpath = "(//div[@class='form-group custom-mt-form-group'])[3]/select")
-    public WebElement departmentDropdown;
+//    @FindBy (xpath = "(//div[@class='form-group custom-mt-form-group'])[3]/select")
+//    public WebElement departmentDropdown;
 
 
     @FindBy (xpath = "(//input[@type='text'])[1]")
