@@ -1,4 +1,4 @@
-Feature: 
+Feature: Delete student
 
 	
 	@BB-437 @BB-409
