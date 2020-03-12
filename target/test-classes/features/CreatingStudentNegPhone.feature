@@ -1,5 +1,5 @@
 @smoke
-Feature:Creating a student N
+Feature:Creating a student
 
   @BB-419 @BB-409
   Scenario Outline:Creating a student

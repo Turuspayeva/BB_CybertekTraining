@@ -206,22 +206,18 @@ public void user_clicks_on_submit_button() {
 //        where student.first_name='Nikolas' and student.last_name='Bond' and contact.phone='240-123-1231';
 
         try {
-
-
             List<Map<Object, Object>> result = DBUtility.executeQuery(query);
             SeleniumUtils.pause(3);
             Assert.assertTrue("Array with set result is not empty", result.isEmpty());
             for (int i=0; i<result.size(); i++){
                 System.out.println(result.get(i).toString());
             }
-
-
+            DBUtility.close();
 
         }
         catch (Exception e){
             System.out.println(e.getLocalizedMessage());
         }
-
 
 
     }

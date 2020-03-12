@@ -5,7 +5,7 @@ Feature: Positive Scenario for Teacher
 		Given User is on the homepage
 
 
-	@BB-410 @BB-409
+	#@BB-410 @BB-409
 	Scenario: Positive - Create Teacher
 		Given User is on the Add Teacher dropdown
 		And User enters Firstname

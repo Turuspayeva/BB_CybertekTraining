@@ -5,12 +5,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
-import javax.swing.*;
-
 public class EditStudentPage {
-
-
-
 
     public EditStudentPage(){
         PageFactory.initElements(Driver.getDriver(),this);

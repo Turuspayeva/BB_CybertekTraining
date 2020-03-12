@@ -29,10 +29,9 @@ public class DBUtility { private static Connection connection;
     }
 
     public static List<Map<Object, Object>> executeQuery (String query) throws SQLException {
-            statement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
+        statement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
 
-            resultSet = statement.executeQuery(query);
-
+        resultSet = statement.executeQuery(query);
         ResultSetMetaData metaData = resultSet.getMetaData();
         int numberOfColumns = metaData.getColumnCount();
         List<Map<Object, Object>> data = new ArrayList();

@@ -135,8 +135,8 @@ public class BB_424_EditTeacher_stepDef {
                 pageHeaderText3.equalsIgnoreCase("Edit Teacher"));
 
 //--------------------------- Verify if there is no any record in DataBase ---------------------------
-   try {
 
+        try {
             DBUtility.createConnection();
         }
         catch(Exception e){

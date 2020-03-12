@@ -1,6 +1,6 @@
 @BB-423 @BB-409 @smoke
-Feature:User Enters Empty Email N
-  @BB-423 @BB-409
+Feature:As a User I should able to create teacher
+  @BB-423
 	Scenario: NegativeScenario User Enters Empty Email
 		Given User is on CybertekTrining Main Page
 		When User clicks on Teachers
