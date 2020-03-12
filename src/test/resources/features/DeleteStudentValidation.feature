@@ -1,4 +1,5 @@
-Feature: Delete student
+@smoke
+Feature: Delete student validation
 
 	
 	@BB-437 @BB-409
