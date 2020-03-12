@@ -1,6 +1,6 @@
 package step_defs.EmptyEmail;
 
-import com.github.javafaker.Faker;
+
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -12,14 +12,18 @@ import pages.AddTeacherPage;
 import pages.AllTeacherPage;
 import pages.LeftSideMenu;
 import utilities.Config;
+import utilities.DBUtility;
 import utilities.Driver;
+
+import java.sql.SQLException;
+import java.util.List;
+import java.util.Map;
 
 public class EmptyEmail_step_defs {
 
     AddTeacherPage addTeacherPage = new AddTeacherPage();
-//    AllTeacherPage allTeacherPage = new AllTeacherPage();
+    //    AllTeacherPage allTeacherPage = new AllTeacherPaged();
     LeftSideMenu leftSideMenu = new LeftSideMenu();
-
 
 
     @Given("User is on CybertekTrining Main Page")
@@ -29,11 +33,12 @@ public class EmptyEmail_step_defs {
         Driver.getDriver().get(Config.getProperty("url"));
 
     }
+
     @When("User clicks on Teachers")
     public void user_clicks_on_Teachers() {
         //clic
 //        leftSideMenu.AllTeachersLink.click();
-     // allTeacherPage.addTeacherDropdown.click();
+        // allTeacherPage.addTeacherDropdown.click();
         leftSideMenu.TeachersDropdown.click();
 
     }
@@ -41,15 +46,16 @@ public class EmptyEmail_step_defs {
     @When("All Teachers and Add Teachers Should be Displayed")
     public void all_Teachers_and_Add_Teachers_Should_be_Displayed() {
 
-//        Assert.assertTrue(allTeacherPage.allTeachersDropdown.isDisplayed());
-//        Assert.assertTrue(allTeacherPage.addTeacherDropdown.isDisplayed());
+        // Assert.assertTrue(.allTeachersDropdown.isDisplayed());
+        //  Assert.assertTrue(AddTeacherLink.addTeacherDropdown.isDisplayed());
 
     }
 
     @When("User Clicks on Add Teachers")
     public void user_Clicks_on_Add_Teachers() {
 
-   leftSideMenu.AddTeacherLink.click();
+        leftSideMenu.AddTeacherLink.click();
+
     }
 
     @When("User Enters First Name")
@@ -122,6 +128,7 @@ public class EmptyEmail_step_defs {
         addTeacherPage.birthDateInput.sendKeys("11/12/1993");
 
     }
+
     @When("User Enters Salary")
     public void user_Enters_Salary() {
         addTeacherPage.salaryInput.sendKeys("100000");
@@ -159,4 +166,22 @@ public class EmptyEmail_step_defs {
 
     }
 
+    @Then("User Should verfy the Teacher was not created in DataBase")
+    public void user_Should_verfy_the_Teacher_was_not_created_in_DataBase() {
+        try {
+            DBUtility.createConnection();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        String query = "select * from teacher where email_address is null and last_name = 'booba' ";
+
+        try {
+            List <Map<Object , Object >> data =  DBUtility.executeQuery(query);
+            Assert.assertTrue("Array with set result is not empty", data.isEmpty());
+        } catch (SQLException e) {
+            e.printStackTrace();
+
+        }
+
+    }
 }

@@ -1,5 +1,5 @@
 @smoke
-Feature:
+Feature: Discard "delete confirmation" message
 
 	
 	@BB-438 @BB-409

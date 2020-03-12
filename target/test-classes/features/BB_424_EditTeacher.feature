@@ -1,5 +1,5 @@
-Feature: Verify the Firstname field not allowing to put negative data on Edit Details Page
-
+@smoke
+Feature: Verify the Firstname field
 	@BB-424 @BB-409 @negative
 	Scenario Outline: Verify the Firstname field not allowing to put negative data on Edit Details Page
 		Given the user is on Edit Teacher Page
