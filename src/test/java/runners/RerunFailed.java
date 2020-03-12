@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         plugin = {"html:target/cucumber-reports",
                 "json:target/cukesreport.json"},
         features = "@target/failed/rerun.txt",
-        glue = "step_defs"
+        glue = "@Kana"
 
 )
 public class RerunFailed {
