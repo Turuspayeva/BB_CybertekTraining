@@ -2,7 +2,7 @@
 Feature: Delete student validation
 
 	
-	#@BB-437 @BB-409
+	@BB-437 @BB-409
 	Scenario: Delete student validation
 		Given User logged in to app and on all students module
 		When User click on vertical ellipsis in particular student card

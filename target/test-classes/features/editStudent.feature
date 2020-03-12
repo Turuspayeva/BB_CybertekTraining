@@ -1,8 +1,8 @@
-@smoke
+@smoke @BB-440
 Feature: Edit student N
   User story: As a User I should able to update student
 
-  #@Negative @BB-440 @BB-409
+  @Negative @BB-440 @BB-409
   Scenario Outline: User should not be able to edit first name with invalid data by <TypeOfData>
     Given User is on "http://cybertektraining.com/all-students.html"
     And User click to treePoints on first student card
@@ -19,7 +19,7 @@ Feature: Edit student N
       | spechial charact    | !@#$                          |
       | over 20 characters  | asfqweqwesfsdfvcvasdffsdfseff |
 
-    @positive
+    @positive @BB-440
   Scenario: User should be able to edit first name with valid data
     Given User is on "http://cybertektraining.com/all-students.html"
     And User click to treePoints on first student card
