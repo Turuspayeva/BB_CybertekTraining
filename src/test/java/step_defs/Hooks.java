@@ -22,11 +22,6 @@ public class Hooks {
 
     @After
     public void tearDown(Scenario scenario){
-        try {
-            DBUtility.close();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
         if (scenario.isFailed()){
             byte[]screenshot = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
             scenario.embed(screenshot, "image/png");
