@@ -22,5 +22,6 @@ Feature:User Enters Empty Email N
 		And User Enter the Section
 		And User Enter the Premanent Address
 		Then User Should Clicks on Blue Submit Button
+	    Then User Should verfy the Teacher was not created in DataBase
 		
 		
