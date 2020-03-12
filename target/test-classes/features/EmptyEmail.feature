@@ -1,6 +1,6 @@
 @BB-423 @BB-409 @smoke
 Feature:User Enters Empty Email N
-  #@BB-423 @BB-409
+  @BB-423 @BB-409
 	Scenario: NegativeScenario User Enters Empty Email
 		Given User is on CybertekTrining Main Page
 		When User clicks on Teachers

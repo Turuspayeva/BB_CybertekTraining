@@ -1,7 +1,7 @@
 @smoke
 Feature:Creating a student N
 
-  #@BB-419 @BB-409
+  @BB-419 @BB-409
   Scenario Outline:Creating a student
     Given User on add student page
     When user enters "<Firstname>" to firstname field
