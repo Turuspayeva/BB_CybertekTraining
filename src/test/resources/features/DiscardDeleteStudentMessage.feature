@@ -1,7 +1,5 @@
 @smoke
-Feature: Discard "delete confirmation" message
-
-	
+Feature:Discard "delete confirmation" message
 	@BB-438 @BB-409
 	Scenario: Discard "delete confirmation" message
 		Given User logged in to app and on all students module

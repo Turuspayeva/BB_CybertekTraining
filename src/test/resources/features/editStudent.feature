@@ -1,7 +1,6 @@
 @smoke @BB-440
-Feature: Edit student N
+Feature:Edit student N
   User story: As a User I should able to update student
-
   @Negative @BB-440 @BB-409
   Scenario Outline: User should not be able to edit first name with invalid data by <TypeOfData>
     Given User is on "http://cybertektraining.com/all-students.html"

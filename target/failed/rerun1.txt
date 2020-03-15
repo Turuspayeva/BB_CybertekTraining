@@ -1,0 +1,4 @@
+src/test/resources/features/DeleteStudentValidation.feature:6
+src/test/resources/features/CreatingStudentNegPhone.feature:36:39
+src/test/resources/features/BB_424_EditTeacher.feature:22:23:24:25
+src/test/resources/features/editStudent.feature:17:18:19:20

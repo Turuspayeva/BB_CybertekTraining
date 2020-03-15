@@ -1,5 +1,7 @@
 @smoke
-Feature:Delete Teacher on Page
+Feature: Delete Teacher on Page
+
+	
 	@BB-417
 	Scenario: PositiveScenario - User Should be able To delete Teacher 
 		Given User will go on main page
